@@ -1,5 +1,0 @@
-pagina de inicio
-pagina de productos
-pagina de juego con descripcion y precio
-pagina de login
-pagina de checkout
