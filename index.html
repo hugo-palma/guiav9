@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/guiav9/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="/guiav9/jquery-2.1.4.min.js"></script>
+    <script src="/guiav9/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Game Shop</h1>
+        </div>
+        <div data-role="main" id="main" class="ui-content">
+            <div id="resultado0">
+                <img height="100" width="760" src="img/bg-02.jpg" >
+            </div>
+            <a href="#page2" id="btnVer" data-role="button">Ver C&aacute;talogo</a>
+            <a href="#page4" id="btnContacto" data-role="button">Cont&aacute;ctanos</a>
+            <a href="#page5" id="btnContacto" data-role="button">Iniciar Sesi&oacute;n</a>
+        </div>
+        <div data-role="footer">
+            <h2>Game Shop 2016 Derechos Reservados</h2>
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1 id="titulo">Juegos Disponibles</h1>
+        </div>
+        <div data-role="main" id="" class="ui-content">
+            <div id="resultado1"></div>
+            <a href="#" id="btnMas" class="ui-link ui-btn ui-shadow ui-corner-all" data-role="button">Ver m&aacute;s</a>
+        </div>
+        <div data-role="footer">
+            <h2>Game Shop 2016 Derechos Reservados</h2>
+        </div>
+    </div>
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1>Detalles</h1>
+        </div>
+        <div data-role="main" id="main" class="ui-content">
+            <div id="resultado2">
+                <a href="#page1"  data-role="button">Regresar</a>
+            </div>
+            <div id="cargar_mas"></div>
+        </div>
+        <div data-role="footer">
+            <h2>Game Shop 2016 Derechos Reservados</h2>
+        </div>
+    </div>
+    <div data-role="page" id="page4">
+        <div data-role="header">
+            <h1>Contactenos</h1>
+        </div>
+        <div data-role="main" id="main" class="ui-content">
+            <div id="resultado3">
+                <h2>Telefono:</h2>
+                <a class="ui-btn ui-icon-phone ui-btn-icon-left">(503) 2257-7777</a>
+                <a class="ui-btn ui-icon-mail ui-btn-icon-left">gameshop@mail.com</a>
+                <a class="ui-btn ui-icon-phone ui-btn-icon-left">(503) 2257-7777</a>
+                </br>
+                <a href="#page1"  data-role="button">Regresar</a>
+            </div>
+            <div id="cargar_mas"></div>
+        </div>
+        <div data-role="footer">
+            <h2>Game Shop 2016 Derechos Reservados</h2>
+        </div>
+    </div>
+    <div data-role="page" id="page5">
+        <div data-role="header">
+            <h1>Contactenos</h1>
+        </div>
+        <div data-role="main" id="main" class="ui-content">
+            <div id="resultado3">
+                <h3>Usuario:</h3>
+                <input name="usuario" id="usuario"></input>
+                <h3>Contrase&ntilde;a:</h3>
+                <input name="pass" id="pass"></input></br>
+                <a href="#page1" id="btnIngresar" onclick="validar(document.getElementById('usuario').value, document.getElementById('pass').value)"  data-role="button">Ingresar</a>
+                <a href="#page1" id="btnCancelar"  data-role="button">Regresar</a>
+            </div>
+            <div id="cargar_mas"></div>
+        </div>
+        <div data-role="footer">
+            <h2>Game Shop 2016 Derechos Reservados</h2>
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript">
+        </script>
+</body>
+
+</html>
